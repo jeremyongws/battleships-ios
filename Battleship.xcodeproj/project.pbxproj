@@ -13,6 +13,7 @@
 		18B931971CACF5F7006224BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B931951CACF5F7006224BA /* Main.storyboard */; };
 		18B931991CACF5F7006224BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B931981CACF5F7006224BA /* Assets.xcassets */; };
 		18B9319C1CACF5F7006224BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B9319A1CACF5F7006224BA /* LaunchScreen.storyboard */; };
+		18B931A51CACF698006224BA /* SeaGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B931A41CACF698006224BA /* SeaGridViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		18B931981CACF5F7006224BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B9319B1CACF5F7006224BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B9319D1CACF5F7006224BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B931A31CACF698006224BA /* SeaGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaGridViewController.h; sourceTree = "<group>"; };
+		18B931A41CACF698006224BA /* SeaGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaGridViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +63,11 @@
 			children = (
 				18B9318F1CACF5F7006224BA /* AppDelegate.h */,
 				18B931901CACF5F7006224BA /* AppDelegate.m */,
+				18B931951CACF5F7006224BA /* Main.storyboard */,
 				18B931921CACF5F7006224BA /* ViewController.h */,
 				18B931931CACF5F7006224BA /* ViewController.m */,
-				18B931951CACF5F7006224BA /* Main.storyboard */,
+				18B931A31CACF698006224BA /* SeaGridViewController.h */,
+				18B931A41CACF698006224BA /* SeaGridViewController.m */,
 				18B931981CACF5F7006224BA /* Assets.xcassets */,
 				18B9319A1CACF5F7006224BA /* LaunchScreen.storyboard */,
 				18B9319D1CACF5F7006224BA /* Info.plist */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B931A51CACF698006224BA /* SeaGridViewController.m in Sources */,
 				18B931941CACF5F7006224BA /* ViewController.m in Sources */,
 				18B931911CACF5F7006224BA /* AppDelegate.m in Sources */,
 				18B9318E1CACF5F7006224BA /* main.m in Sources */,
