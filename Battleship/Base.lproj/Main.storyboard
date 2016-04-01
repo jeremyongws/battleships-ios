@@ -30,6 +30,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ2-uK-rqJ">
+                                <rect key="frame" x="127" y="250" width="66" height="30"/>
+                                <state key="normal" title="Play vs AI"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -135,38 +139,38 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CoH-Ue-1ti">
-                                        <rect key="frame" x="0.0" y="82" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="82" width="320" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaa-FW-bYl">
-                                                <rect key="frame" x="0.0" y="0.0" width="64" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="41"/>
                                                 <state key="normal" title="20"/>
                                                 <connections>
                                                     <action selector="seaGridViewButtons:" destination="Vhc-x3-fsK" eventType="touchUpInside" id="O8x-4q-Imi"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KP-CU-741">
-                                                <rect key="frame" x="64" y="0.0" width="64" height="40"/>
+                                                <rect key="frame" x="64" y="0.0" width="64" height="41"/>
                                                 <state key="normal" title="21"/>
                                                 <connections>
                                                     <action selector="seaGridViewButtons:" destination="Vhc-x3-fsK" eventType="touchUpInside" id="4de-Fa-uv4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsG-dW-gDA">
-                                                <rect key="frame" x="128" y="0.0" width="64" height="40"/>
+                                                <rect key="frame" x="128" y="0.0" width="64" height="41"/>
                                                 <state key="normal" title="22"/>
                                                 <connections>
                                                     <action selector="seaGridViewButtons:" destination="Vhc-x3-fsK" eventType="touchUpInside" id="JsK-x0-uOo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYM-50-252">
-                                                <rect key="frame" x="192" y="0.0" width="64" height="40"/>
+                                                <rect key="frame" x="192" y="0.0" width="64" height="41"/>
                                                 <state key="normal" title="23"/>
                                                 <connections>
                                                     <action selector="seaGridViewButtons:" destination="Vhc-x3-fsK" eventType="touchUpInside" id="tKr-R3-hj5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWo-Bd-RgD">
-                                                <rect key="frame" x="256" y="0.0" width="64" height="40"/>
+                                                <rect key="frame" x="256" y="0.0" width="64" height="41"/>
                                                 <state key="normal" title="24"/>
                                                 <connections>
                                                     <action selector="seaGridViewButtons:" destination="Vhc-x3-fsK" eventType="touchUpInside" id="WLn-um-d1T"/>
@@ -175,7 +179,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-aK-g0Q">
-                                        <rect key="frame" x="0.0" y="122" width="320" height="41"/>
+                                        <rect key="frame" x="0.0" y="123" width="320" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-Zh-pSZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="41"/>
@@ -233,7 +237,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGR-Xr-KeN">
                                                 <rect key="frame" x="128" y="0.0" width="64" height="41"/>
-                                                <state key="normal" title="43"/>
+                                                <state key="normal" title="42"/>
                                                 <connections>
                                                     <action selector="seaGridViewButtons:" destination="Vhc-x3-fsK" eventType="touchUpInside" id="Lhe-5E-EeQ"/>
                                                 </connections>
@@ -273,8 +277,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1p0-ja-K5B" firstAttribute="top" secondItem="yud-sP-bW8" secondAttribute="bottom" constant="150" id="Z4A-9D-Mfb"/>
-                            <constraint firstItem="yud-sP-bW8" firstAttribute="top" secondItem="fjJ-n3-BjI" secondAttribute="bottom" constant="150" id="bUy-cq-uNV"/>
+                            <constraint firstItem="1p0-ja-K5B" firstAttribute="top" secondItem="yud-sP-bW8" secondAttribute="bottom" constant="150" id="chj-TA-KjK"/>
+                            <constraint firstItem="yud-sP-bW8" firstAttribute="top" secondItem="fjJ-n3-BjI" secondAttribute="bottom" constant="150" id="cma-32-a9W"/>
                             <constraint firstAttribute="trailing" secondItem="yud-sP-bW8" secondAttribute="trailing" id="pNZ-WJ-0u2"/>
                             <constraint firstItem="yud-sP-bW8" firstAttribute="leading" secondItem="l8b-0s-JDs" secondAttribute="leading" id="rSY-Za-AqZ"/>
                         </constraints>
@@ -285,6 +289,31 @@
                         <outlet property="buttonMyMap" destination="Owi-Re-woB" id="3Fq-SJ-Ian"/>
                         <outlet property="seaGridLabel" destination="wJi-WV-RuX" id="3Bn-bz-7ov"/>
                         <outletCollection property="seaGridViewButtons" destination="eBu-fB-Ikd" id="1IW-pG-hlM"/>
+                        <outletCollection property="seaGridViewButtons" destination="fd3-eC-Pgz" id="zJF-zd-dro"/>
+                        <outletCollection property="seaGridViewButtons" destination="Vkl-2k-GXd" id="BB6-A3-hxG"/>
+                        <outletCollection property="seaGridViewButtons" destination="Vkl-2k-GXd" id="sFQ-3N-r3g"/>
+                        <outletCollection property="seaGridViewButtons" destination="Q6y-cc-efx" id="SvJ-KB-ZI2"/>
+                        <outletCollection property="seaGridViewButtons" destination="IjP-wM-EWJ" id="A0o-FQ-gaT"/>
+                        <outletCollection property="seaGridViewButtons" destination="bTo-hr-Hjr" id="UfZ-ZO-cct"/>
+                        <outletCollection property="seaGridViewButtons" destination="Ciq-Ky-h8u" id="xwo-de-EK5"/>
+                        <outletCollection property="seaGridViewButtons" destination="t7A-nC-klQ" id="zha-2f-ckW"/>
+                        <outletCollection property="seaGridViewButtons" destination="DJM-pj-dv0" id="B2B-oN-kIH"/>
+                        <outletCollection property="seaGridViewButtons" destination="AOh-ik-9nM" id="qtc-Qk-iQ1"/>
+                        <outletCollection property="seaGridViewButtons" destination="vaa-FW-bYl" id="mpF-va-9d7"/>
+                        <outletCollection property="seaGridViewButtons" destination="8KP-CU-741" id="TgG-7J-xMt"/>
+                        <outletCollection property="seaGridViewButtons" destination="CsG-dW-gDA" id="Oy1-Mh-hrM"/>
+                        <outletCollection property="seaGridViewButtons" destination="dYM-50-252" id="DW4-61-3Km"/>
+                        <outletCollection property="seaGridViewButtons" destination="lWo-Bd-RgD" id="43Y-dr-d8F"/>
+                        <outletCollection property="seaGridViewButtons" destination="iEl-Zh-pSZ" id="zXo-sO-WSt"/>
+                        <outletCollection property="seaGridViewButtons" destination="S8L-a7-P3B" id="VZS-0R-g0M"/>
+                        <outletCollection property="seaGridViewButtons" destination="CQc-R0-8FY" id="U27-U4-2Pn"/>
+                        <outletCollection property="seaGridViewButtons" destination="Hcf-BO-8eE" id="7CQ-yQ-HRL"/>
+                        <outletCollection property="seaGridViewButtons" destination="WeB-Ay-uGu" id="cNG-hY-doH"/>
+                        <outletCollection property="seaGridViewButtons" destination="sZY-Yw-Fr9" id="9r9-bg-63B"/>
+                        <outletCollection property="seaGridViewButtons" destination="FD0-sr-3Bu" id="17z-eL-0cV"/>
+                        <outletCollection property="seaGridViewButtons" destination="VGR-Xr-KeN" id="LLt-GD-T7v"/>
+                        <outletCollection property="seaGridViewButtons" destination="Ncq-pJ-tAu" id="ecI-mo-Krh"/>
+                        <outletCollection property="seaGridViewButtons" destination="Za7-0x-H0P" id="lHZ-hY-ujw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6m-KL-KPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -308,6 +337,258 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yyq-82-fYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="387" y="340"/>
+        </scene>
+        <!--Single Player View Controller-->
+        <scene sceneID="fqq-5h-Tnj">
+            <objects>
+                <viewController id="EHw-vo-ini" customClass="SinglePlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xtV-eo-rQH"/>
+                        <viewControllerLayoutGuide type="bottom" id="cF7-l6-9PM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6TS-GW-bp4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="toG-Zf-qNt">
+                                <rect key="frame" x="0.0" y="214" width="320" height="248"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="was-Bk-Uhm">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKc-kR-Yye">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="00"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="SG3-aP-RZd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUu-K3-Ik6">
+                                                <rect key="frame" x="64" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="01"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="PK4-ez-OIG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T21-JH-OHG">
+                                                <rect key="frame" x="128" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="02"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="787-Fq-Jzj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfC-8J-7Qs">
+                                                <rect key="frame" x="192" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="03"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="Poh-lr-kXU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2d-4C-tEn">
+                                                <rect key="frame" x="256" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="04"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="SJx-bZ-Boa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-cm-qfu">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljC-ya-fxv">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="10"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="nXV-xB-R88"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLJ-o0-Xgq">
+                                                <rect key="frame" x="64" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="11"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="um1-9F-hRr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZl-XR-Tsb">
+                                                <rect key="frame" x="128" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="12"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="K3k-7R-slq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYY-fb-1tL">
+                                                <rect key="frame" x="192" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="13"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="WmT-mM-v2D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhM-P6-bKN">
+                                                <rect key="frame" x="256" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="14"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="z7y-Bh-LBp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nLE-2d-iDr">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjz-Vx-Aq4">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="20"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="rIn-RX-Poa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tq-GM-4yc">
+                                                <rect key="frame" x="64" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="21"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="KdS-r9-yCY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZG-LZ-WeC">
+                                                <rect key="frame" x="128" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="22"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="S9G-eg-XVK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US6-Hw-yen">
+                                                <rect key="frame" x="192" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="23"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="Wd8-mq-9W6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaI-aj-nXN">
+                                                <rect key="frame" x="256" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="24"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="NEz-KU-fZW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rja-jG-BA3">
+                                        <rect key="frame" x="0.0" y="149" width="320" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lna-KC-TvO">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="30"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="esm-Fv-MHx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctm-6i-yGt">
+                                                <rect key="frame" x="64" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="31"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="nfh-GI-SmT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkT-oG-58q">
+                                                <rect key="frame" x="128" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="32"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="hZG-ES-hEz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K1-39-4Hz">
+                                                <rect key="frame" x="192" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="33"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="fv4-qg-PFy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd0-h6-bC2">
+                                                <rect key="frame" x="256" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="34"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="2C0-J2-PyX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="blS-bn-ba5">
+                                        <rect key="frame" x="0.0" y="199" width="320" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDX-aa-5n9">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="40"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="9XY-cd-aGl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVp-uA-hQ7">
+                                                <rect key="frame" x="64" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="41"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="ANu-DE-veV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPY-It-Xpu">
+                                                <rect key="frame" x="128" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="43"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="l6M-Bf-kVT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImU-FU-5rK">
+                                                <rect key="frame" x="192" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="43"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="0DY-Cv-qtq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HZ-82-by6">
+                                                <rect key="frame" x="256" y="0.0" width="64" height="50"/>
+                                                <state key="normal" title="44"/>
+                                                <connections>
+                                                    <action selector="seaGridViewButtons:" destination="EHw-vo-ini" eventType="touchUpInside" id="1ZD-Df-wME"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoS-FR-pnL">
+                                <rect key="frame" x="70" y="441" width="55" height="30"/>
+                                <state key="normal" title="My Map"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzw-rf-lYk">
+                                <rect key="frame" x="211" y="441" width="44" height="30"/>
+                                <state key="normal" title="Attack"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SeaGridView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCU-XA-qFv">
+                                <rect key="frame" x="111" y="148" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="toG-Zf-qNt" secondAttribute="trailing" id="CV0-y3-MbQ"/>
+                            <constraint firstItem="toG-Zf-qNt" firstAttribute="top" secondItem="xtV-eo-rQH" secondAttribute="bottom" constant="150" id="DHk-5G-1qw"/>
+                            <constraint firstItem="cF7-l6-9PM" firstAttribute="top" secondItem="toG-Zf-qNt" secondAttribute="bottom" constant="150" id="oIC-OU-NF0"/>
+                            <constraint firstItem="toG-Zf-qNt" firstAttribute="leading" secondItem="6TS-GW-bp4" secondAttribute="leading" id="od2-Yc-Rx1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="utv-hY-5Fi"/>
+                    <connections>
+                        <outlet property="buttonAttack" destination="Zzw-rf-lYk" id="A8A-Zg-ijn"/>
+                        <outlet property="buttonMyMap" destination="VoS-FR-pnL" id="XSo-NV-e5s"/>
+                        <outlet property="seaGridLabel" destination="eCU-XA-qFv" id="fCo-Nv-kRn"/>
+                        <outletCollection property="seaGridViewButtons" destination="PfC-8J-7Qs" id="gV6-7Z-CpX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pne-Mq-ppZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="1296"/>
         </scene>
     </scenes>
 </document>
