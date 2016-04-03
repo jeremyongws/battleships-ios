@@ -14,6 +14,8 @@
 		18B931991CACF5F7006224BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B931981CACF5F7006224BA /* Assets.xcassets */; };
 		18B9319C1CACF5F7006224BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B9319A1CACF5F7006224BA /* LaunchScreen.storyboard */; };
 		18B931A51CACF698006224BA /* SeaGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B931A41CACF698006224BA /* SeaGridViewController.m */; };
+		3FF8759D1CAE2D8B00147732 /* BattleshipsGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8759C1CAE2D8B00147732 /* BattleshipsGame.m */; };
+		3FF875A01CAE660E00147732 /* BattleshipPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8759F1CAE660E00147732 /* BattleshipPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		18B9319D1CACF5F7006224BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B931A31CACF698006224BA /* SeaGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaGridViewController.h; sourceTree = "<group>"; };
 		18B931A41CACF698006224BA /* SeaGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaGridViewController.m; sourceTree = "<group>"; };
+		3FF8759B1CAE2D8B00147732 /* BattleshipsGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleshipsGame.h; sourceTree = "<group>"; };
+		3FF8759C1CAE2D8B00147732 /* BattleshipsGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleshipsGame.m; sourceTree = "<group>"; };
+		3FF8759E1CAE660E00147732 /* BattleshipPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleshipPlayer.h; sourceTree = "<group>"; };
+		3FF8759F1CAE660E00147732 /* BattleshipPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleshipPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 				18B931951CACF5F7006224BA /* Main.storyboard */,
 				18B931921CACF5F7006224BA /* ViewController.h */,
 				18B931931CACF5F7006224BA /* ViewController.m */,
+				3FF875971CAE2CB300147732 /* Models */,
 				18B931A31CACF698006224BA /* SeaGridViewController.h */,
 				18B931A41CACF698006224BA /* SeaGridViewController.m */,
 				18B931981CACF5F7006224BA /* Assets.xcassets */,
@@ -82,6 +89,17 @@
 				18B9318D1CACF5F7006224BA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FF875971CAE2CB300147732 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FF8759B1CAE2D8B00147732 /* BattleshipsGame.h */,
+				3FF8759C1CAE2D8B00147732 /* BattleshipsGame.m */,
+				3FF8759E1CAE660E00147732 /* BattleshipPlayer.h */,
+				3FF8759F1CAE660E00147732 /* BattleshipPlayer.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B931A51CACF698006224BA /* SeaGridViewController.m in Sources */,
+				3FF8759D1CAE2D8B00147732 /* BattleshipsGame.m in Sources */,
 				18B931941CACF5F7006224BA /* ViewController.m in Sources */,
 				18B931911CACF5F7006224BA /* AppDelegate.m in Sources */,
+				3FF875A01CAE660E00147732 /* BattleshipPlayer.m in Sources */,
 				18B9318E1CACF5F7006224BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +328,7 @@
 				18B931A21CACF5F7006224BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
