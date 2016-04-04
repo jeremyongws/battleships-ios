@@ -8,6 +8,7 @@
 
 #import "SeaGridViewController.h"
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface SeaGridViewController ()
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *seaGridViewButtons;
@@ -29,6 +30,8 @@
 	for (UIButton *button in [self seaGridViewButtons]){
 		[button setBackgroundColor:[UIColor greenColor]];
 		[button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+		[button.layer setBorderColor:[[UIColor blackColor] CGColor]];
+		[button.layer setBorderWidth:1];
 	}
 }
 
@@ -45,7 +48,18 @@
 	}
 	[[[game currentPlayer] hits] setObject:@"HIT" atIndexedSubscript:([[sender restorationIdentifier] integerValue] - 1)];
 	
-	[game checkWinner];
+	if ([game checkWinner]){
+		UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Player Two's" message:@"turn" preferredStyle:UIAlertControllerStyleAlert];
+		UIAlertAction *ok = [UIAlertAction
+												 actionWithTitle:@"Restart"
+												 style:UIAlertActionStyleDefault
+												 handler:^(UIAlertAction * _Nonnull action) {
+													 [self viewDidLoad];
+												 }];;
+		[alertController addAction:ok];
+		[self presentViewController:alertController
+											 animated:YES completion:nil];
+	}
 	
 	if ([[game currentPlayer] isEqual:[game playerOne]]){
 		UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Player Two's" message:@"turn" preferredStyle:UIAlertControllerStyleAlert];
