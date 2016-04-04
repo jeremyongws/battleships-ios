@@ -12,21 +12,33 @@
 
 - (void)setUpGrid{
 	[self setShipsGrids:[self randomGrid]];
+	[self populateHitsArray];
+}
+
+- (void)populateHitsArray{
+	self.hits = [[NSMutableArray alloc] initWithArray:															@[@"NO",@"NO",@"NO",@"NO",@"NO",
+								@"NO",@"NO",@"NO",@"NO",@"NO",
+								@"NO",@"NO",@"NO",@"NO",@"NO",
+								@"NO",@"NO",@"NO",@"NO",@"NO",
+								@"NO",@"NO",@"NO",@"NO",@"NO"]];
 }
 
 
-- (void)setHit:(NSInteger)id{
-	[[self hits] setObject:@TRUE atIndexedSubscript:id];
+- (BOOL)hasShipIn:(NSInteger)mapGrid{
+	if ([[[self shipsGrids] objectAtIndex:mapGrid] isEqualToString:@"NO"]){
+		return NO;
+	} else {
+		return YES;
+	}
 }
 
 - (NSMutableArray *)randomGrid{
-	NSMutableArray *mutableGrids = [[NSMutableArray alloc]
-															initWithArray:@[@"NO",@"NO",@"NO",@"NO",@"NO",
-																							@"NO",@"NO",@"NO",@"NO",@"NO",
-																							@"NO",@"NO",@"NO",@"NO",@"NO",
-																							@"NO",@"NO",@"NO",@"NO",@"NO",
-																							@"NO",@"NO",@"NO",@"NO",@"NO"]];
-	for (NSInteger i = 3; i < 0; i--) {
+	NSMutableArray *mutableGrids = [[NSMutableArray alloc] initWithArray:@[@"NO",@"NO",@"NO",@"NO",@"NO",
+											@"NO",@"NO",@"NO",@"NO",@"NO",
+											@"NO",@"NO",@"NO",@"NO",@"NO",
+											@"NO",@"NO",@"NO",@"NO",@"NO",
+											@"NO",@"NO",@"NO",@"NO",@"NO"]];
+	for (NSInteger i = 3; i > 0; i--) {
 		int rand1 = arc4random_uniform(25);
 		int rand2 = arc4random_uniform(25);
 		int rand3 = arc4random_uniform(25);
@@ -67,7 +79,7 @@
 					[mutableGrids setObject:@"D" atIndexedSubscript:rand1];
 					[mutableGrids setObject:@"D" atIndexedSubscript:(rand1 + 1)];
 				}
-			} else if (i == 2){
+			} else if (i == 1){
 				[mutableGrids setObject:@"G" atIndexedSubscript:rand1];
 			}
 
@@ -107,7 +119,7 @@
 					[mutableGrids setObject:@"D" atIndexedSubscript:rand2];
 					[mutableGrids setObject:@"D" atIndexedSubscript:(rand2 + 1)];
 				}
-			} else if (i == 2){
+			} else if (i == 1){
 				[mutableGrids setObject:@"G" atIndexedSubscript:rand2];
 			}
 				
@@ -148,34 +160,13 @@
 					[mutableGrids setObject:@"D" atIndexedSubscript:rand3];
 					[mutableGrids setObject:@"D" atIndexedSubscript:(rand3 + 1)];
 				}
-			} else if (i == 2){
+			} else if (i == 1){
 				[mutableGrids setObject:@"G" atIndexedSubscript:rand3];
 			}
 				
 		}
 	}
-	return [[NSMutableArray alloc] init];
-}
-
-
-// check possible ship directions
-- (NSMutableArray *)directions:(NSMutableArray *)grids index:(NSInteger)index shipSize:(NSInteger)size {
-	NSInteger shipSize = size;
-	NSMutableArray *possibleDirections = [[NSMutableArray alloc] init];
-	
-	if([self checkTop:grids index:index shipSize:shipSize]){
-		[possibleDirections addObject:@"TOP"];
-	}
-	if([self checkBottom:grids index:index shipSize:shipSize]){
-		[possibleDirections addObject:@"BOT"];
-	}
-	if([self checkLeft:grids index:index shipSize:size]){
-		[possibleDirections addObject:@"LEFT"];
-	}
-	if([self checkRight:grids index:index shipSize:size]){
-		[possibleDirections addObject:@"RIGHT"];
-	}
-	return possibleDirections;
+	return mutableGrids;
 }
 
 // check possible ship direction
@@ -184,7 +175,9 @@
 	if ((index - (maxTop)) < 0){
 		return NO;
 	} else {
-		if ([[grids objectAtIndex:(index - 5)] isEqualToString:@"NO"] && [[grids objectAtIndex:(index - maxTop)] isEqualToString:@"NO"]){
+		if (shipSize == 1){
+			return YES;
+		} else if ([[grids objectAtIndex:(index - 5)] isEqualToString:@"NO"] && [[grids objectAtIndex:(index - maxTop)] isEqualToString:@"NO"]){
 				return YES;
 		} else {
 			return NO;
@@ -194,10 +187,12 @@
 
 - (BOOL)checkBottom:(NSMutableArray *)grids index:(NSInteger)index shipSize:(NSInteger)shipSize{
 	NSInteger maxBot = (shipSize - 1) * 5;
-	if ((index + (maxBot)) > 25){
+	if ((index + (maxBot)) > 24){
 		return NO;
 	} else {
-		if ([[grids objectAtIndex:(index + 5)] isEqualToString:@"NO"] && [[grids objectAtIndex:(index + maxBot)] isEqualToString:@"NO"]){
+		if (shipSize == 1){
+			return YES;
+		} else if ([[grids objectAtIndex:(index + 5)] isEqualToString:@"NO"] && [[grids objectAtIndex:(index + maxBot)] isEqualToString:@"NO"]){
 				return YES;
 		} else {
 				return NO;
@@ -239,6 +234,26 @@
 		}
 	}
 	return YES;
+}
+
+// check possible ship directions
+- (NSMutableArray *)directions:(NSMutableArray *)grids index:(NSInteger)index shipSize:(NSInteger)size {
+	NSInteger shipSize = size;
+	NSMutableArray *possibleDirections = [[NSMutableArray alloc] init];
+	
+	if([self checkTop:grids index:index shipSize:shipSize]){
+		[possibleDirections addObject:@"TOP"];
+	}
+	if([self checkBottom:grids index:index shipSize:shipSize]){
+		[possibleDirections addObject:@"BOT"];
+	}
+	if([self checkLeft:grids index:index shipSize:size]){
+		[possibleDirections addObject:@"LEFT"];
+	}
+	if([self checkRight:grids index:index shipSize:size]){
+		[possibleDirections addObject:@"RIGHT"];
+	}
+	return possibleDirections;
 }
 
 @end

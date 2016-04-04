@@ -7,22 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BattleshipsGame.h"
-#import "SeaGridViewController.h"
 #import <UIKit/UIKit.h>
 
 @interface BattleshipPlayer : NSObject
 @property NSArray *shipsGrids;
 @property NSMutableArray *hits;
+@property NSString *name;
 
+- (BOOL)checkTop:(NSMutableArray *)grids index:(NSInteger)index shipSize:(NSInteger)shipSize;
+
+- (BOOL)checkBottom:(NSMutableArray *)grids index:(NSInteger)index shipSize:(NSInteger)shipSize;
+- (BOOL)checkLeft:(NSMutableArray *)grids index:(NSInteger)index shipSize:(NSInteger)shipSize;
+- (BOOL)checkRight:(NSMutableArray *)grids index:(NSInteger)index shipSize:(NSInteger)shipSize;
 - (NSMutableArray *)randomGrid;
-- (void)setHit;
+- (BOOL)hasShipIn:(NSInteger)mapGrid;
 - (void)setUpGrid;
-- (BOOL)checkTop;
-- (BOOL)checkBottom;
-- (BOOL)checkLeft;
-- (BOOL)checkRight;
-- (NSMutableArray *)directions;
-
+- (NSMutableArray *)directions:(NSMutableArray *)grids index:(NSInteger)index shipSize:(NSInteger)size;
 
 @end

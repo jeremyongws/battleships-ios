@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BattleshipPlayer.h"
 #import "BattleshipsGame.h"
 
 @interface SeaGridViewController : UIViewController

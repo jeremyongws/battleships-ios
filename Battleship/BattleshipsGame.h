@@ -6,8 +6,8 @@
 //  Copyright © 2016 Daniel Chong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "BattleshipPlayer.h"
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface BattleshipsGame : NSObject
@@ -18,8 +18,10 @@
 @property BattleshipPlayer *winner;
 @property BOOL inProgress;
 
-- (void)startGame;
+- (void)startGame:(BattleshipPlayer*)playerOne withPlayerTwo:(BattleshipPlayer*)playerTwo;
 - (BOOL)checkWinner;
 - (void)endTurn;
+- (BattleshipPlayer*)notCurrentPlayer;
+
 
 @end

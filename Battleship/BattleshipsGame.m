@@ -13,11 +13,13 @@
 
 
 
-- (void)startGame{
+- (void)startGame:(BattleshipPlayer*)playerOne withPlayerTwo:(BattleshipPlayer*)playerTwo {
 	[self setInProgress:YES];
 	u_int32_t dice = arc4random_uniform(2) + 1;
-	[self setPlayerOne:[[BattleshipPlayer alloc] initWithName:@"Player 1"]];
-	[self setPlayerTwo:[[BattleshipPlayer alloc] initWithName:@"Player 2"]];
+	[self setPlayerOne:playerOne];
+	[self setPlayerTwo:playerTwo];
+	[[self playerOne] setUpGrid];
+	[[self playerTwo] setUpGrid];
 	if (dice == 1) {
 		[self setCurrentPlayer:[self playerOne]];
 	} else {
@@ -29,17 +31,28 @@
 	BattleshipPlayer *player = [self currentPlayer];
 	NSInteger hitsCount = [[player hits] count];
 	NSInteger shipCount;
-	if ([player isEqual:[self playerOne]]){
+	int occurrencesOfShips = 0;
+	for(NSString *string in [player hits]) {
+				occurrencesOfShips += (![string isEqualToString:@"NO"]?1:0);
+	}
+	if ([player isEqual:[self playerOne]]) {
 		shipCount = [[[self playerTwo] shipsGrids] count];
 	} else {
 		shipCount = [[[self playerOne] shipsGrids] count];
 	}
-	
 	if (shipCount == hitsCount){
 		[self setInProgress:FALSE];
 		return YES;
 	} else {
 		return NO;
+	}
+}
+
+- (BattleshipPlayer*)notCurrentPlayer{
+	if ([self.currentPlayer isEqual:[self playerOne]]){
+			 return [self playerTwo];
+	}else {
+			return [self playerOne];
 	}
 }
 
