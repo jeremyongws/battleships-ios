@@ -40,7 +40,7 @@
 	} else {
 		shipCount = [[[self playerOne] shipsGrids] count];
 	}
-	if (shipCount == hitsCount){
+	if (shipCount == occurrencesOfShips){
 		[self setInProgress:FALSE];
 		return YES;
 	} else {
